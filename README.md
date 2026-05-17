@@ -1,3 +1,2 @@
-# Credit_Risk_Scorecard
-This is scorecard model
-## HI risk models
+# AI-Augmented Credit Risk Scorecard & PD Modeling Platform
+End-to-end retail credit risk modeling pipeline combining traditional scorecard methods, machine learning, explainable AI and interactive Streamlit deployment.
