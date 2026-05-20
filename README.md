@@ -1,62 +1,91 @@
-# AI-Augmented Credit Risk Scorecard & PD Modeling Platform
-End-to-end retail credit risk analytics platform combining traditional scorecard modeling, machine learning, explainable AI, and interactive Streamlit deployment.
+<div align="center">
 
-## Objective
+# 🤖 AI-Augmented Credit Risk Scorecard & PD Modeling Platform
 
-To build a scalable and interpretable AI-augmented credit risk decisioning framework for retail lending by leveraging scorecard modeling, Probability of Default (PD) estimation, machine learning, and explainable AI techniques. The platform is designed to emulate real-world banking risk analytics workflows, enabling automated borrower risk segmentation, credit scoring, and intelligent underwriting support through interactive analytics and deployment-ready dashboards.
+### <i>End-to-end retail credit risk analytics platform combining traditional scorecard modeling, machine learning, explainable AI, and interactive Streamlit deployment.</i>
 
-## Business Problem
+</div>
 
-Financial institutions must accurately assess borrower default risk to minimize credit losses and optimize lending decisions. Traditional underwriting approaches often struggle with scalability, interpretability, and dynamic risk assessment.
+---
 
-This project aims to simulate a real-world retail lending risk workflow by building a Probability of Default (PD) modeling and scorecard framework capable of:
+## 🎯 Objective
+
+To build a scalable and interpretable AI-augmented credit risk decisioning framework for retail lending by leveraging scorecard modeling, Probability of Default (PD) estimation, machine learning, and explainable AI techniques.
+
+---
+
+## 🏦 Business Problem
+
+Financial institutions must accurately assess borrower default risk to minimize credit losses and optimize lending decisions.
+
+This project simulates a real-world retail lending risk workflow capable of:
+
 - Predicting borrower default probability
 - Segmenting customers by risk profile
 - Supporting underwriting decisions
 - Improving portfolio monitoring
 - Providing explainable AI-driven recommendations
 
-## Dataset
+---
 
-Dataset: Home Credit Default Risk
+## 📊 Dataset
 
-Source:
-[https://www.kaggle.com/competitions/home-credit-default-risk/data](https://www.kaggle.com/competitions/home-credit-default-risk/data)
+**Dataset:** Home Credit Default Risk
 
-Key datasets used:
+🔗 Source:  
+https://www.kaggle.com/competitions/home-credit-default-risk/data
+
+### Key datasets used:
 - application_train.csv
 - bureau.csv
 - previous_application.csv
-  
-## Project Workflow
 
-1. Business Understanding
-2. Data Cleaning & Preprocessing
-3. Exploratory Data Analysis (EDA)
-4. Feature Engineering
-5. WOE & IV Analysis
-6. Scorecard Development
-7. Probability of Default (PD) Modeling
-8. Machine Learning Model Benchmarking
-9. Explainable AI using SHAP
-10. AI-Based Underwriting Recommendation Engine
-11. Streamlit Dashboard Deployment
+---
 
+## ⚙️ Project Workflow
 
-## Key Features
+```text
+Business Understanding
+        ↓
+Data Cleaning & Preprocessing
+        ↓
+Exploratory Data Analysis
+        ↓
+Feature Engineering
+        ↓
+WOE & IV Analysis
+        ↓
+Scorecard Development
+        ↓
+PD Modeling
+        ↓
+Machine Learning Benchmarking
+        ↓
+Explainable AI (SHAP)
+        ↓
+AI Recommendation Engine
+        ↓
+Streamlit Dashboard Deployment
+```
 
-- End-to-end retail credit risk pipeline
-- Traditional scorecard development using WOE & IV
-- Probability of Default (PD) estimation
-- Logistic Regression scorecard model
-- Machine Learning risk modeling
-- Explainable AI using SHAP
-- AI-driven underwriting recommendations
-- Interactive Streamlit dashboard
-- Risk segmentation & score banding
-- Portfolio-level analytics
+---
 
-## Tech Stack
+## 🚀 Key Features
+
+✔ End-to-end retail credit risk pipeline  
+✔ Traditional scorecard development using WOE & IV  
+✔ Probability of Default (PD) estimation  
+✔ Logistic Regression scorecard model  
+✔ Machine Learning risk modeling  
+✔ Explainable AI using SHAP  
+✔ AI-driven underwriting recommendations  
+✔ Interactive Streamlit dashboard  
+✔ Risk segmentation & score banding  
+✔ Portfolio-level analytics  
+
+---
+
+## 🛠️ Tech Stack
 
 | Category | Tools & Libraries |
 |---|---|
@@ -70,30 +99,36 @@ Key datasets used:
 | Dashboard | Streamlit |
 | Version Control | Git & GitHub |
 
-## Modeling Techniques
+---
 
-### Traditional Risk Modeling
+## 📈 Modeling Techniques
+
+### 📌 Traditional Risk Modeling
 - Weight of Evidence (WOE)
 - Information Value (IV)
 - Logistic Regression Scorecard
 - Score Scaling & Risk Banding
 
-### Machine Learning Models
+### 🤖 Machine Learning Models
 - Random Forest
 - XGBoost
 - LightGBM
 
-### Evaluation Metrics
+### 📉 Evaluation Metrics
 - ROC-AUC
 - KS Statistic
 - Gini Coefficient
 - Precision & Recall
 
-## Explainable AI
+---
+
+## 🧠 Explainable AI
 
 The project integrates SHAP-based explainability techniques to interpret model predictions and identify key risk drivers influencing borrower default probability.
 
-## Streamlit Dashboard Features
+---
+
+## 📊 Streamlit Dashboard Features
 
 - Applicant Risk Scoring
 - Probability of Default Prediction
@@ -103,7 +138,9 @@ The project integrates SHAP-based explainability techniques to interpret model p
 - AI Recommendation Engine
 - Portfolio Risk Monitoring
 
-## Future Enhancements
+---
+
+## 🔮 Future Enhancements
 
 - IFRS9 Expected Credit Loss (ECL) Modeling
 - Real-time API Deployment
@@ -112,35 +149,33 @@ The project integrates SHAP-based explainability techniques to interpret model p
 - Alternative Data Integration
 - Generative AI Risk Assistant
 
-## Results
+---
+
+## 📌 Results
 
 - Achieved robust PD prediction performance
 - Built interpretable scorecard-based risk framework
 - Successfully deployed interactive Streamlit dashboard
 - Enabled AI-driven underwriting recommendations
 
-## Author
+---
 
-<h3><i>Shrabani Das</i></h3>
+## 👨‍💻 Author
 
-<p style="color:lightgrey;">
-<i>
-Data Scientist • Credit Risk Analytics • Machine Learning • AI in Finance
-</i>
-</p>
+### *Shrabani Das*
 
-<!-- <p style="color:lightgrey;">
-<i>
-Building intelligent, interpretable, and industry-oriented risk analytics solutions at the intersection of banking, quantitative modeling, and AI-driven decision systems.
-</i>
-</p> -->
+> Data Scientist • Credit Risk Analytics • Machine Learning • AI in Finance
 
 ---
 
-<p style="color:lightgrey;">
+<div align="center">
+
 <i>
+
 © 2026 Shrabani Das. All Rights Reserved.
-<br><br>
-This project is developed for educational, research, and portfolio purposes only. Unauthorized reproduction, redistribution, or commercial usage of the project code, architecture, or documentation without prior permission is prohibited.
+
+This project is developed for educational, research, and portfolio purposes only.
+
 </i>
-</p>
+
+</div>
