@@ -166,7 +166,7 @@ The project integrates SHAP-based explainability techniques to interpret model p
 
 <img width="569" height="119" alt="image" src="https://github.com/user-attachments/assets/60244a7b-5cb5-4847-b75d-aa3a6ef66438" />
 
-<img width="863" height="470" alt="image" src="https://github.com/user-attachments/assets/b9971cae-990f-4c06-949d-c8523ce30f03" />
+<img width="570" height="200" alt="image" src="https://github.com/user-attachments/assets/b9971cae-990f-4c06-949d-c8523ce30f03" />
 
 - The vintage curve exhibits fluctuations across Months on Book (MOB), likely due to the presence of multiple loan product types with heterogeneous repayment structures and risk behaviors.
 
