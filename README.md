@@ -160,6 +160,19 @@ The project integrates SHAP-based explainability techniques to interpret model p
 
 ---
 
+## 💡 Insights
+
+### 1. Roll Rate + Vinatge Analysis Insights
+
+<img width="569" height="119" alt="image" src="https://github.com/user-attachments/assets/60244a7b-5cb5-4847-b75d-aa3a6ef66438" />
+
+- The vintage curve exhibits fluctuations across Months on Book (MOB), likely due to the presence of multiple loan product types with heterogeneous repayment structures and risk behaviors.
+
+- Additionally, the Home Credit dataset represents a competition-oriented dataset rather than a fully production-grade banking portfolio, resulting in approximate account aging and noisy delinquency emergence patterns.
+
+- Despite the observed fluctuations, most meaningful delinquency emergence appears within the earlier repayment periods, supporting the use of a medium-term performance window such as 12 months for application scorecard development.
+
+
 ## 👨‍💻 Author
 
 ### *Shrabani Das*
