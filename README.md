@@ -45,15 +45,17 @@ https://www.kaggle.com/competitions/home-credit-default-risk/data
 ## ⚙️ Project Workflow
 
 ```text
-Business Understanding
+Obejective & Business Understanding
         ↓
 Data Cleaning & Preprocessing
         ↓
 Exploratory Data Analysis
         ↓
+Roll Rate and Vinatge Analysis for Performance window and target definition slection
+        ↓
 Feature Engineering
         ↓
-WOE & IV Analysis
+Initial Characteristic Analysis 
         ↓
 Scorecard Development
         ↓
@@ -97,7 +99,6 @@ Streamlit Dashboard Deployment
 | Machine Learning | XGBoost, LightGBM |
 | Explainability | SHAP |
 | Dashboard | Streamlit |
-| Version Control | Git & GitHub |
 
 ---
 
@@ -112,7 +113,6 @@ Streamlit Dashboard Deployment
 ### 🤖 Machine Learning Models
 - Random Forest
 - XGBoost
-- LightGBM
 
 ### 📉 Evaluation Metrics
 - ROC-AUC
