@@ -174,6 +174,9 @@ The project integrates SHAP-based explainability techniques to interpret model p
 
 - Despite the observed fluctuations, most meaningful delinquency emergence appears within the earlier repayment periods, supporting the use of a medium-term performance window such as 12 months for application scorecard development.
 
+  ### 2. Feature Engineering & WoE Binning
+  - Engineered domain-driven credit risk features, performed WOE transformation and Information Value analysis, created monotonic risk bins and prepared model-ready variables for scorecard development.
+
 
 ## 👨‍💻 Author
 
