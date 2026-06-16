@@ -90,18 +90,20 @@ global model, feature_list, woe_bins
 
 @st.cache_data
 def load_reports():
+    # 1. Get the directory of the current app.py file
+    current_dir = Path(__file__).parent
 
-    metrics = pd.read_csv("../Reports/final_metrics.csv")
+    # 2. Resolve the absolute paths to your report files
+    metrics_path = current_dir.parent / "Reports" / "final_metrics.csv"
+    approval_path = current_dir.parent / "Reports" / "approval_strategy.csv"
+    risk_path = current_dir.parent / "Reports" / "risk_band_summary.csv"
 
-    approval_strategy = pd.read_csv("../Reports/approval_strategy.csv")
+    # 3. Read the CSVs using the absolute path objects
+    metrics = pd.read_csv(metrics_path)
+    approval_strategy = pd.read_csv(approval_path)
+    risk_band_summary = pd.read_csv(risk_path)
 
-    risk_band_summary = pd.read_csv("../Reports/risk_band_summary.csv")
-
-    return (
-        metrics,
-        risk_band_summary,
-        approval_strategy
-    )
+    return metrics, risk_band_summary, approval_strategy
 
 metrics, risk_band_summary, approval_strategy = load_reports()
 
