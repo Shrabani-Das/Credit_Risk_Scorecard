@@ -107,12 +107,14 @@ def load_reports():
 
 metrics, risk_band_summary, approval_strategy = load_reports()
 
+current_dir = Path(__file__).parent
+
 decision_policy = pd.read_csv(
-    "../Reports/decision_policy.csv"
+    current_dir.parent / "Reports" / "decision_policy.csv"
 )
 
 risk_band_lookup = pd.read_csv(
-    "../Reports/risk_band_lookup.csv"
+    current_dir.parent / "Reports" / "risk_band_lookup.csv"
 )
 
 # Section 3  SIDEBAR
