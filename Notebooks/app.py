@@ -23,6 +23,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
+from pathlib import Path
 import plotly.graph_objects as go
 import re
 import matplotlib.pyplot as plt
@@ -64,18 +65,24 @@ and recommends a lending decision.
 
 @st.cache_resource
 def load_model():
+    # 1. Get the directory of the current app.py file
+    current_dir = Path(__file__).parent
 
-    model = joblib.load("../Models/final_logit.pkl")
+    # 2. Resolve the absolute paths to all your required files
+    model_path = current_dir.parent / "Models" / "final_logit.pkl"
+    features_path = current_dir.parent / "Models" / "final_features.pkl"  # Adjust filename if different
+    woe_path = current_dir.parent / "Models" / "woe_bins.pkl"  # Adjust filename if different
 
-    feature_list = joblib.load("../Models/final_features.pkl")
+    # 3. Load each file safely using joblib
+    model = joblib.load(model_path)
+    feature_list = joblib.load(features_path)
+    woe_bins = joblib.load(woe_path)
 
-    woe_bins = joblib.load("../Models/woe_bins.pkl")
-
+    # 4. Return them all together
     return model, feature_list, woe_bins
 
 
-model, feature_list, woe_bins = load_model()
-
+global model, feature_list, woe_bins
 
 # ---------------------------------------------------
 # LOAD REPORTS
@@ -165,7 +172,7 @@ def lookup_woe(value, bin_table):
 # RAW TO WOE TRANSFORMATION
 # ---------------------------------------------------
 
-def transform_to_woe(raw_input):
+def transform_to_woe(raw_input, woe_bins):
 
     transformed = {}
 
@@ -672,8 +679,9 @@ if page == "Prediction":
         # -----------------------------------------
         # Convert Raw Values to WOE
         # -----------------------------------------
+        model, feature_list, woe_bins = load_model()
 
-        input_df = transform_to_woe(raw_input)
+        input_df = transform_to_woe(raw_input, woe_bins)
         # print(raw_input)
         # print(input_df)
 
