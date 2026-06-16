@@ -3,3 +3,4 @@ joblib
 plotly
 matplotlib
 statsmodels
+reportlab
