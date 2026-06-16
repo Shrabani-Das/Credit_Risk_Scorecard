@@ -81,8 +81,11 @@ def load_model():
     # 4. Return them all together
     return model, feature_list, woe_bins
 
-
 global model, feature_list, woe_bins
+
+model, feature_list, woe_bins = load_model()
+
+
 
 # ---------------------------------------------------
 # LOAD REPORTS
@@ -908,9 +911,19 @@ if page == "Model Monitoring":
     st.header("📈 Model Monitoring Dashboard")
 
     # Load Monitoring Reports
-    psi = pd.read_csv("../Reports/psi_summary.csv")
-    csi = pd.read_csv("../Reports/csi_summary.csv")
-    calibration = pd.read_csv("../Reports/calibration_summary.csv")
+    current_dir = Path(__file__).parent
+
+    psi = pd.read_csv(
+        current_dir.parent / "Reports" / "psi_summary.csv"
+    )
+
+    csi = pd.read_csv(
+        current_dir.parent / "Reports" / "csi_summary.csv"
+    )
+
+    calibration = pd.read_csv(
+        current_dir.parent / "Reports" / "calibration_summary.csv"
+    )
 
     # Convert Metric-Value table into dictionary
     metric_dict = dict(zip(metrics["Metric"], metrics["Value"]))
