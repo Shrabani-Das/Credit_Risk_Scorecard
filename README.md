@@ -8,6 +8,8 @@
 
 ---
 
+[![Live Demo](https://img.shields.io/badge/Streamlit-Live%20Demo-red?logo=streamlit)](https://creditriskscorecard-shrabanidas-01.streamlit.app/)
+
 ## 🎯 Objective
 
 To build a scalable and interpretable AI-augmented credit risk decisioning framework for retail lending by leveraging scorecard modeling, Probability of Default (PD) estimation, machine learning, and explainable AI techniques.
