@@ -1,0 +1,10 @@
+Metric,Value
+Train_AUC,0.7141
+Test_AUC,0.7034
+Train_Gini,0.4282
+Test_Gini,0.4067
+KS,0.29
+Portfolio_Bad_Rate,2.91%
+Min_Score,509.14
+Max_Score,678.14
+Lift,9.5

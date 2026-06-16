@@ -1,0 +1,10 @@
+feature,VIF
+max_dpd_l12m_woe,inf
+total_30dpd_l12m_woe,inf
+num_prev_apps_woe,3.77358400702757
+num_approved_woe,3.3747110440200827
+num_refused_woe,1.36319951241702
+avg_credit_grant_ratio_woe,1.1421730168431796
+avg_credit_age_years_woe,1.0894099004548343
+age_years_woe,1.0868227853595118
+avg_instalment_remaining_woe,1.0287477157134428

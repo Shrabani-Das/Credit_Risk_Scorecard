@@ -1,0 +1,7 @@
+Feature,CSI,Interpretation
+avg_credit_age_years_woe,0.00012279735229817225,Stable
+num_approved_woe,4.780213710688975e-05,Stable
+age_years_woe,1.5304336878224377e-05,Stable
+avg_instalment_remaining_woe,1.219062894884585e-05,Stable
+avg_credit_grant_ratio_woe,5.2183400670902415e-06,Stable
+num_refused_woe,2.4569087483632002e-06,Stable
